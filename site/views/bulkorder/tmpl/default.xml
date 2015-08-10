@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_BULKORDER_BULKORDER_VIEW_DEFAULT_TITLE">
+		<message>COM_BULKORDER_BULKORDER_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+			name="request"
+			addfieldpath="/administrator/components/com_bulkorder/models/fields"
+			>
+		<fieldset name="request">
+			<field
+					name="id"
+					type="bulkorder"
+					label="COM_BULKORDER_BULKORDER_FIELD_MESSAGE_LABEL"
+					description="COM_BULKORDER_BULKORDER_FIELD_MESSAGE_DESC"
+					/>
+		</fieldset>
+	</fields>
+</metadata>
