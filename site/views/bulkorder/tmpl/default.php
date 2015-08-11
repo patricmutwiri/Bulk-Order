@@ -223,8 +223,8 @@ $user 	= JFactory::getUser();
 				  },
 				  success: function(data, textStatus, xhr) {
 				    console.log('Success');
-				    var cartTxt = jQuery(data).find('.hikashop_small_cart_total_title').text();
-				    jQuery('.hikashop_small_cart_total_title').text(cartTxt);
+				    var cartTxt = jQuery(data).find('.hikacart').html();
+				    jQuery('.hikacart').empty().html(cartTxt);
 				    jQuery.get('<?php echo JURI::getInstance()->toString() ?>', function(data, textStatus, xhr) {
 				      	var cartP = jQuery(data).find('#Mod166').html(); 
 				    	jQuery('#Mod166').empty().html(cartP);
